@@ -3,8 +3,8 @@ import random
 from telegram import Update, ReplyKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
-# Replace with your actual token or use environment variables
-TOKEN = os.getenv("8647346985:AAHxlUFBY4WiYlTWuVrpVX8mRG2M911PsR8")
+# HARDCODE THE TOKEN HERE
+TOKEN = "8647346985:AAHxlUFBY4WiYlTWuVrpVX8mRG2M911PsR8" 
 
 QUOTES = [
     "The only way to do great work is to love what you do. – Steve Jobs",
@@ -13,6 +13,8 @@ QUOTES = [
     "Believe you can and you're halfway there. – Theodore Roosevelt",
     "Your time is limited, so don't waste it living someone else's life. – Steve Jobs"
 ]
+
+# ... (keep the rest of the code the same)
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     kb = [["/inspire"]]
